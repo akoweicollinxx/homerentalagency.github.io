@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Living Cost</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar####### -->
+    <nav class="navbar">
+        <div class="container flex">
+          <div class="brand-and-toggler flex">
+              <a href="#" class="navbar-brand">
+                  <span><img src="images/logo.PNG" alt=""></span>
+              </a>
+              <button type="button" class="btn navbar-toggler-open">
+                 <i class="fas fa-bars"></i>
+              </button>
+          </div>
+          <div class="navbar-collapse">
+              <button type="button" class="btn navbar-toggler-close">
+                 <i class="fas fa-times"></i>
+              </button>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a href="#home" class="nav-link link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#about" class="nav-link">Landlord</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#service" class="nav-link">Tenants</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#contact" class="nav-link">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+ </nav>
+<!-- home######## -->
+<section class="home">
+   <div class="background">
+      <img src="images/background.PNG" alt="">
+      <div class="head">
+         <div class="caption" data-aos="fade-right" data-aos-delay="300">
+            <h1>The Most Affortable Place To Stay In The San Franciso Bay Area</h1>
+         </div>
+         <div class="map" data-aos="fade-left" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25238.186606003033!2d-122.44519745699493!3d37.748461723473255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1673125610387!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="search" data-aos="fade-up" data-aos-delay="310">
+               <div class="search-inner">
+                  <select name="services" id="service">
+                     <option value="" name="service">All Type</option>
+                 </select>
+                 <select class="select-2" name="service" id="service">
+                  <option value="" name="service">Neighborhood</option>
+              </select>
+              <button type="submit" class="search-btn">
+               <i class="fas fa-search"></i>
+           </button>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</section>
+
+<!-- living cost######## -->
+<section class="living-cost">
+   <div class="l-cost" data-aos="flip-up" data-aos-delay="350">
+      <h2>Minimum Living Cost Takes Care Of Everything</h2>
+      <h5></h5>
+   </div>
+   <div class="display">
+      <div class="photo" data-aos="flip-left" data-aos-delay="350">
+         <img src="images/i2.PNG" alt="">
+      </div>
+      <div class="side">
+         <div class="side-one" data-aos="flip-left" data-aos-delay="370">
+            <button type="button" class="dollar">
+               <img src="images/i16.PNG" alt="">
+            </button>
+            <div class="words">
+               <h3> Pay As Little As Possible!</h3>
+            </div>
+         </div>
+   
+         <div class="side-one" data-aos="flip-right" data-aos-delay="370">
+            <button type="button" class="dollar">
+               <img src="images/i14.PNG" alt="">
+            </button>
+            <div class="words">
+               <h3> Enjoy Wisdom Of Community!</h3>
+            </div>
+         </div>
+   
+         <div class="side-one" data-aos="flip-left" data-aos-delay="380">
+            <button type="button" class="dollar">
+               <img src="images/i11.PNG" alt="">
+            </button>
+            <div class="words">
+               <h3> Let's Somebody else Take Care Of Landlord!</h3>
+            </div>
+         </div>
+   
+         <div class="side-one" data-aos="flip-right" data-aos-delay="390">
+            <button type="button" class="dollar">
+               <img src="images/i15.PNG" alt="">
+            </button>
+            <div class="words">
+               <h3> Enjoy Peaceful Environment!</h3>
+            </div>
+         </div>
+         
+         <div class="side-one" data-aos="flip-left" data-aos-delay="395">
+            <button type="button" class="dollar">
+               <img src="images/i12.PNG" alt="">
+            </button>
+            <div class="words">
+               <h3> Stay Safe! Save Money!</h3>
+            </div>
+         </div>
+   
+         <div class="side-one" data-aos="flip-right" data-aos-delay="400">
+            <button type="button" class="dollar">
+               <img src="images/i13.PNG" alt="">
+            </button>
+            <div class="words">
+               <h3> Pay For What You Use !</h3>
+            </div>
+         </div>      
+      </div>
+   </div>
+</section>
+
+<!-- list of properties######## -->
+<section class="properties">
+   <div class="list-of-props">
+      <div class="list" data-aos="fade-down" data-aos-delay="410">
+         <h2>List Of Properties</h2>
+         <h3></h3>
+      </div>
+      <button type="button" class="list-btn" data-aos="fade-up" data-aos-delay="410">View All Property</button>
+   </div>
+   <div class="two property-lists" data-aos="zoom-in" data-aos-delay="420">
+      <div class="full-list">
+         <div class="one-list-one">
+            <img src="images/i21.PNG" alt="">
+            <div class="inner-list">
+               <div class="details">
+                  <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+               </div>
+               <div class="private">
+                  <p>Private Room</p>
+                  <h2>$1200/Month</h2>
+               </div>
+               <div class="emoji">
+                  <div class="first-emoji">
+                     <img src="images/i23.PNG" alt="">
+                     <h5>4</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/24.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i22.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+         <div class="one-list">
+            <img src="images/i21.PNG" alt="">
+            <div class="inner-list">
+               <div class="details">
+                  <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+               </div>
+               <div class="private">
+                  <p>Private Room</p>
+                  <h2>$1200/Month</h2>
+               </div>
+               <div class="emoji">
+                  <div class="first-emoji">
+                     <img src="images/i23.PNG" alt="">
+                     <h5>4</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i24.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i22.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+         <div class="one-list">
+            <img src="images/i21.PNG" alt="">
+            <div class="inner-list">
+               <div class="details">
+                  <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+               </div>
+               <div class="private">
+                  <p>Private Room</p>
+                  <h2>$1200/Month</h2>
+               </div>
+               <div class="emoji">
+                  <div class="first-emoji">
+                     <img src="images/i23.PNG" alt="">
+                     <h5>4</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i24.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i22.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+      <div class="full-list2">
+         <div class="one-list">
+            <img src="images/i21.PNG" alt="">
+            <div class="inner-list">
+               <div class="details">
+                  <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+               </div>
+               <div class="private">
+                  <p>Private Room</p>
+                  <h2>$1200/Month</h2>
+               </div>
+               <div class="emoji">
+                  <div class="first-emoji">
+                     <img src="images/i23.PNG" alt="">
+                     <h5>4</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i24.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i22.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+         <div class="one-list">
+            <img src="images/i21.PNG" alt="">
+            <div class="inner-list">
+               <div class="details">
+                  <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+               </div>
+               <div class="private">
+                  <p>Private Room</p>
+                  <h2>$1200/Month</h2>
+               </div>
+               <div class="emoji">
+                  <div class="first-emoji">
+                     <img src="images/i23.PNG" alt="">
+                     <h5>4</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i24.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i22.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+         <div class="one-list">
+            <img src="images/i21.PNG" alt="">
+            <div class="inner-list">
+               <div class="details">
+                  <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+               </div>
+               <div class="private">
+                  <p>Private Room</p>
+                  <h2>$1200/Month</h2>
+               </div>
+               <div class="emoji">
+                  <div class="first-emoji">
+                     <img src="images/i23.PNG" alt="">
+                     <h5>4</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i24.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+                  <h6></h6>
+                  <div class="first-emoji">
+                     <img src="images/i22.PNG" alt="">
+                     <h5>2</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+      <div class="three property-lists active" data-aos="zoom-out" data-aos-delay="430">
+         <div class="full-list">
+            <div class="one-list-one">
+               <img src="images/i19.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      
+            <div class="one-list">
+               <img src="images/i1.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="one-list">
+               <img src="images/i18.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      
+         <div class="full-list2">
+            <div class="one-list">
+               <img src="images/i3.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      
+            <div class="one-list">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="one-list">
+               <img src="images/i21.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="four property-lists" data-aos="zoom-in" data-aos-delay="440">
+         <div class="full-list">
+            <div class="one-list-one">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      
+            <div class="one-list">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="one-list">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      
+         <div class="full-list2">
+            <div class="one-list">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      
+            <div class="one-list">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="one-list">
+               <img src="images/i20.PNG" alt="">
+               <div class="inner-list">
+                  <div class="details">
+                     <h1>2578 Folsom Street, San Francisco, CA, 94110</h1>
+                  </div>
+                  <div class="private">
+                     <p>Private Room</p>
+                     <h2>$1200/Month</h2>
+                  </div>
+                  <div class="emoji">
+                     <div class="first-emoji">
+                        <img src="images/i23.PNG" alt="">
+                        <h5>4</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i24.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                     <h6></h6>
+                     <div class="first-emoji">
+                        <img src="images/i22.PNG" alt="">
+                        <h5>2</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   <div class="scroll">
+      <div class="scroll-one" data-aos="flip-up" data-aos-delay="445">
+         <button data-checker="two" class="scroll-btn">First</button>
+         <button data-checker="two" class="scroll-btn-one">1</button>
+         <button data-checker="three" class="scroll-btn-two checked">2</button>
+         <button data-checker="four" class="scroll-btn-three">3</button>
+         <button data-checker="five" class="scroll-btn2">Next</button>
+      </div>
+   </div>
+</section>
+
+
+<!-- Flexibility######## -->
+<section class="flexibility">
+   <div class="flexi">
+      <div class="flexible-boxes">
+         <div class="flexi-box" data-aos="fade-right" data-aos-delay="450">
+            <h4>Flexible Leases</h4>
+            <img src="images/i10.PNG" alt="">
+         </div>
+         <div class="flexi-box2" data-aos="fade-left" data-aos-delay="455">
+            <h4>7-Day Happiness <br> Guaranteed</h4>
+            <img src="images/i9.PNG" alt="">
+         </div>
+      </div>
+
+      <div class="flexible-boxes2">
+         <div class="flexi-box3" data-aos="fade-right" data-aos-delay="460">
+            <h4>Monthly House <br> Cleaning</h4>
+            <img src="images/i8.PNG" alt="">
+         </div>
+         <div class="flexi-box4" data-aos="fade-left" data-aos-delay="465">
+            <h4>Choose Your <br> Own Roommate</h4>
+            <img src="images/i7.PNG" alt="">
+         </div>
+      </div>
+   </div>
+   <div class="writeup" data-aos="flip-down" data-aos-delay="470">
+      <h2>Flexibility and options to suit your lifestyle.</h2>
+      <p>You need it? We got it. We make finding your next home easy, comfortable and simple. From our hapiness Guarantee to our selective roommate finder option. We provide you the flexibility that you most desire.</p>
+      <button class="writeup-btn">Search Rooms</button>
+   </div>
+</section>
+
+<!-- add new property######## -->
+<section class="add-property">
+   <h2 data-aos="fade-down" data-aos-delay="480">Your Property With Us And Be Confident That Your Room Will Be Filled Out!</h2>
+   <div class="property-box" data-aos="flip-up" data-aos-delay="500">
+      <div class="add-new">
+         <h3>Add A New Property</h3>
+      </div>
+      <div class="fill-box">
+         <div class="inner-boxex">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+         </div>
+         
+         <div class="inner-boxex">
+            <label for="name">Address <span>*</span></label>
+            <input type="text" id="address" name="address" placeholder="Enter Address" required>
+         </div>
+         
+         <div class="inner-boxex">
+            <label for="name">Unit Number <span>*</span></label>
+            <input type="number" id="unit-number" name="unit-number" placeholder="Enter Unit" required>
+         </div>
+
+         <div class="inner-boxex">
+            <label for="name">City <span>*</span></label>
+          <select name="city" id="city">
+             <option value="" name="city">Select City</option>
+          </select>
+         </div>
+
+         <div class="inner-boxex">
+            <label for="name">State <span>*</span></label>
+          <select name="state" id="state">
+             <option value="" name="state">Select State</option>
+          </select>
+         </div>
+
+        <div class="inner-boxex">
+          <label for="name">Room Type <span>*</span></label>
+          <select name="room" id="room">
+             <option value="" name="room">Select Room Type</option>
+          </select>
+        </div>
+
+         <div class="inner-boxex">
+            <label for="name">Price <span>*</span></label>
+          <input type="number" id="price" name="price" placeholder="Enter Price" required>
+         </div>
+
+         <div class="inner-boxex">
+            <label for="name">Room Type <span>*</span></label>
+          <select name="room" id="room">
+             <option value="" name="room">Select Room Type</option>
+          </select>
+         </div>
+      </div>
+     <div class="outer-boxex">
+      <label class="label-d" for="name">Description <span>*</span></label>
+      <textarea name="message" id="subject" cols="10" rows="10">Enter Description</textarea>
+
+      <label for="name" class="label-u">Upload Photos</label>
+      <div class="upload">
+         <h1>Drag your images here, or <span>browse</span></h1>
+         <p>Suported: JPG, JPEG, PNG</p>
+      </div>
+      <button class="upload-btn">Add New Property</button>
+     </div>
+   </div>
+</section>
+
+<!-- testimonial######## -->
+<section class="testimonial">
+   <div class="t-words" data-aos="fade-right" data-aos-delay="520">
+      <img src="images/i17.PNG" alt="">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo sequi doloribus officia, dignissimos consequatur quod perferendis voluptates magnam quidem recusandae, qui maiores, id quos nihil? Quo atque, fuga deserunt numquam eum aperiam debitis natus libero alias, obcaecati, facere nihil quaerat soluta harum rerum amet dignissimos! Debitis accusamus est ea! Ea fuga adipisci ex. Quas!</p>
+      <div class="names">
+         <div class="pic">
+            <img src="images/i5.PNG" alt="">
+         </div>
+         <div class="ceo">
+            <h5>Harry Wilson</h5>
+            <h2>Property Owner</h2>
+         </div>
+      </div>
+      <div class="balls">
+         <h3></h3>
+         <h4></h4>
+         <h4></h4>
+      </div>
+   </div>
+   <div class="display-pic" data-aos="fade-left" data-aos-delay="430">
+      <div class="play-btnn">
+         <img src="images/i25.PNG" id="play-btnn">
+      </div>
+      <video autoplay loop muted plays-inline id="backVideo">
+         <source src="images/video.mp4" type="video/mp4">
+     </video>
+      <!-- <img src="images/i4.JPG" alt=""> -->
+   </div>
+</section>
+
+<!-- footer######## -->
+<section class="footer">
+   <h1></h1>
+   <div class="footer-house">
+      <div class="footer-logo" data-aos="fade-up" data-aos-delay="550">
+         <h2>Logo</h2>
+      </div>
+      <div class="footer-contact" data-aos="fade-down" data-aos-delay="455">
+         <h3><span><img src="images/s3.PNG" alt=""></span> 345 Faulconer Drive, Suite 4 . Charlottesville, CA, 12345</h3>
+         <div class="numbers">
+            <h4><span><img src="images/s2.PNG" alt=""></span>(123) 456-7890</h4>
+            <h5><span><img src="images/s1.PNG" alt=""></span>(123) 456-7890</h5>
+         </div>
+         <div class="socials">
+            <h6>Social Media</h6>
+            <img src="images/s7.PNG" alt="">
+            <img src="images/s4.PNG" alt="">
+            <img src="images/s8.PNG" alt="">
+            <img src="images/s11.PNG" alt="">
+            <img src="images/s10.PNG" alt="">
+            <img src="images/s9.PNG" alt="">
+            <img src="images/s6.PNG" alt="">
+            <img src="images/s5.PNG" alt="">
+         </div>
+      </div>
+   </div>
+   <div class="line">
+      <h2></h2>
+   </div>
+   <div class="footer-bottom">
+      <div class="extralink">
+         <a href="#">ABOUT US</a>
+         <a href="#">CONTACT US</a>
+         <a href="#">HELP</a>
+         <a href="#">PRIVACY POLICY</a>
+         <a href="#">DISCLAMER</a>
+      </div>
+      <div class="copyright">
+         <p>Copyright &copy; 2020 Minimumlivingcost. All rights reserved</p>
+      </div>
+   </div>
+</section>
+
+
+
+
+
+ <!-- jquery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="app.js"></script>
+ <!-- owl carousel -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
+</body>
+</html>
