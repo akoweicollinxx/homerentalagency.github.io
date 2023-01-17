@@ -510,7 +510,7 @@ body{
 }
 .flexi-box3{
     position: relative;
-    top: -70px;
+    top: -45px;
 }
 .flexi-box4{
     position: relative;
@@ -833,7 +833,7 @@ body{
 }
 .numbers{
     display: flex;
-    gap: 110px;
+    gap: 160px;
     position: relative;
     margin-left: 9px;
     top: 20px;
@@ -855,10 +855,10 @@ body{
 }
 .socials{
     display: flex;
-    gap: 15px;
+    gap: 25px;
     position: relative;
     top: 60px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .socials img{
     width: 13px;
@@ -868,10 +868,11 @@ body{
 }
 .extralink{
     display: flex;
-    gap: 8px;
+    gap: 16px;
+    margin-left: 20px;
 }
 .extralink a{
-    font-size: 12px;
+    font-size: 10px;
 }
 .copyright{
     text-align: center;
