@@ -97,6 +97,9 @@ body{
     transition: var(--transition);
     z-index: 999;
 }
+.color{
+    background-color: #f4511e;
+}
 .navbarShow{
     transform: translateX(0);
 }
@@ -524,6 +527,8 @@ body{
 }
 .flexi-box2 img{
     width: 180px;
+    position: relative;
+    left: 10px;
 }
 .flexi-box3 h4{
     position: relative;
@@ -833,7 +838,7 @@ body{
 }
 .numbers{
     display: flex;
-    gap: 160px;
+    gap: 170px;
     position: relative;
     margin-left: 9px;
     top: 20px;
@@ -1277,7 +1282,7 @@ body{
         background-color: transparent;
     }
     .color{
-        background-color: rgb(147, 143, 143);
+        background-color: #f4511e;
     }
     .navbar .container{
         flex-direction: row;
